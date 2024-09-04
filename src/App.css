@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Body */
+body
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui;
+  background-color: black;
+}
+/* Navabr Section */
+.navbar
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.user
+{
+  font-size:x-large;
+  font-weight: 700;
+  color: white;
+  margin-left: 50px;
+  
+}
+.link
+{
+  text-decoration: none;
+}
+.nav-items ul
+{
+  display: flex;
+  gap: 30px;
+  margin-right: 500px;
+}
+.nav-items ul li
+{
+  list-style-type: none;
+  color:white;
+  position:relative;
+  cursor: pointer;
+  transition: color 0.25s;
+  padding:0.5rem 1rem;
+}
+li::after
+{
+  position: absolute;
+  content: "";
+  inset:0;
+  background-color: white;
+  scale: 1 0;
+  z-index: -1;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+.nav-items ul li:hover
+{
+  color: black;
+}
+li:hover::after
+{
+  scale: 1 1;
+}
+/* About Section */
+.aboutsec
+{
+
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+
+}
+.About
+{
+  color:white;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.About .name
+{
+  font-size:35px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+span
+{
+  font-size:20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.role
+{
+  color: orange;
+}
+.About .more
+{
+  margin-top: 5px;
+  width:72%;
+  margin-bottom:10px;
+  color: lightgray;
+  margin-bottom: 20px;
+}
+.Profile
+{
+  margin-right: 200px;
+  margin-top: 50px;
+}
+.Profile img
+{
+  width:300px;
+  height:300px;
+  border-radius: 50%;
+}
+.resume
+{
+  margin-top: 5px;
+}
+.resume button
+{
+  padding:15px 15px;
+  border-radius: 10px;
+  width: 20%;
+  background: linear-gradient(to right, orange, white);
+  font-weight: 700;
+  color:black;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+/* Skills Section */
+.skillsec
+{
+
+  margin-top: 50px;
+  color:white;
+  height: auto;
+  padding: 55px;
+}
+.skilltitle
+{
+  font-size: xx-large;
+  text-align: center;
+  color: white;
+}
+.descri
+{
+  text-align: center;
+  color:lightgray;
+}
+.skilltype
+{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.frontend
+{
+  border: 1px solid white;
+  padding: 20px 30px;
+  width:320px;
+  border-radius: 30px;
+  box-shadow: 0 0 8px #ff9800;
+}
+.S_T{text-align: center;}
+.flist
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px
+}
+.flist .item
+{
+  border:1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:small;
+  border-radius: 5px;
+  padding-right: 5px;
+}
+/* Projects Section */
+.projectsec
+{
+  color:white;
+  height: auto;
+  padding: 30px;
+  margin-top: -10px;
+}
+.ptitle .pname
+{
+  text-align: center;
+  font-size: xx-large;
+}
+.plist
+{
+  display: flex;
+  justify-content: space-around;
+  gap:15px;
+}
+.pl1
+{
+  border: 1px solid white;
+  width: 300px;
+  height: 500px;
+  padding:20px;
+  box-shadow: 0 0 8px #ff9800;
+  border-radius: 20px;
+}
+.pl1 img
+{
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+  margin-top: 10px;
+
+}
+.pl1 .lang
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap:5px;
+  margin-top: 10px;
+}
+.pl1 .lang p
+{
+  border:1px solid lightgray;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: small;
+  box-shadow: 0 0 8px #ff9800;
+}
+.simpledesc
+{
+  color:lightgray;
+  font-size: small;
+
+}
+.explore button
+{
+  padding:10px  15px;
+  margin-top:15px;
+  gap:10px;
+  border-radius: 10px;
+  margin-left: 35px;
+  font-weight: 700;
+  background: linear-gradient(to right, orange, white);
+}
+/* Education Section */
+.edusec
+{
+  color:white;
+}
+.edu
+{
+  text-align: center;
+  font-size: xx-large;
+}
+.education
+{
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  width: 450px;
+  padding: 10px;
+  box-shadow: 0 0 8px #ff9800;
+  border-radius: 20px;
+}
+.graduation,.inter,.SSC 
+{
+  border: 1px solid white;
+  padding :10px;
+  margin: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #ff9800;
+}
+.graduation,.inter,.SSC p
+{
+  font-size: small;
+}
+.edudesc
+{
+  color: lightgray;
+  font-size: small;
+}
+/* Contact Section */
+.contactsec
+{
+  color: white  ;
+  height: auto;
+  margin-top:50px;
+}
+.contitle
+{
+  text-align: center;
+  font-size: xx-large;
+}
+.con
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+}
+form
+{
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 8px #ff9800;
+}
+input,textarea
+{
+  width: 400px;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background:transparent;
+  color: white;
+}
+textarea
+{
+  resize: none;
+}
+form button
+{
+  width: 100%;
+  background-color: blue;
+  color:white;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+.footersec
+{
+  margin-top: 10px;
+}
+.footer
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: white; 
+  padding: 20px;
+}
+
+.footer a {
+  text-decoration: none;
+  margin: 0 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.footer a:hover {
+  opacity: 0.8;
+}
+
+
+.footer a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px; 
+  width: 100%;
+  height: 2px;
+  background-color: #fff; 
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: bottom right;
+}
+
+.footer a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.info
+{
+  color: white;
+  text-align: center;
+  font-size: small;
+}
+/* Responsive Design */
+@media (max-width: 576px)
+{
+  .user{
+    font-size:17px;
+    margin-left: 5px;
+  }
+  /* Navbar Section */
+  .navbar {
+    padding: 4px;
+    width: 100%;
+    background-color: #ff9800;
+  }
+
+  .nav-items ul {
+    display: flex;
+    gap: 1px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .nav-items ul li {
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 11px;
+    text-align: center;
+  }
+  li::after
+  {
+    background-color: red;
+  }
+  /* About Section */
+  .About .name
+  {
+    font-size: 15px;
+  }
+  span{font-size: 10px;}
+  .Profile img
+  {
+    width: 110px;
+    height: 110px;
+  }
+  .About .more
+  {
+    font-size: 10px;
+    margin-right:5px ;
+    width:200px;
+  }
+  .resume button
+  {
+    width: 130px;
+    padding: 10px;
+    font-size:10px;
+  }
+  /* Skills section */
+  .skillsec
+  {
+    margin-top: -50px;
+  }
+  .skilltitle
+  {
+    font-size: medium;
+  }
+  .descri
+  {
+    font-size:10px;
+  }
+  .skilltype
+  {
+    flex-direction: column;
+  }
+  .frontend
+  {
+    width: 200px;
+    height: 350px;
+    margin-bottom:30px;
+
+  }
+  .flist
+  {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .S_T
+  {
+    font-size: medium;
+  }
+  .flist .item
+  {
+    font-size: 10px;
+  }
+  /*Project Section  */
+  .projectsec
+  {
+    margin-top: -90px;
+  }
+  .ptitle .pname
+  {
+    font-size:medium;
+  }
+  .plist
+  {
+    flex-direction: column;
+  }
+  .pl1
+  {
+    width: 250px;
+    margin-left: 10px;
+    height: 450px;
+  }
+  .pl1 img
+  {
+    width: 250px;
+  }
+  .pl1 .lang p
+  {
+    font-size: 11px;
+  }
+  .simpledesc
+  {
+    font-size: 10px;
+  }
+  .explore button
+  {
+    font-size: 10px;
+  }
+  .pjname
+  {
+    font-size: 12px;
+  }
+  /* Education Section */
+  .edu
+  {
+    font-size: medium;
+  }
+  .education
+  {
+    width: 300px;
+  }
+  .edudesc
+  {
+    font-size: 10px;
+  }
+  /* Contact Section */
+  .contitle
+  {
+    font-size: medium;
+  }
+  .conme
+  {
+    font-size: 14px;
+  }
+  form
+  {
+    width: 300px;
+  }
+  input,textarea
+  {
+    width: 90%;
+    padding: 10px;
+  }
+
+}
